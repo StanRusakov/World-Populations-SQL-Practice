@@ -20,13 +20,13 @@ FROM population_years
 WHERE population > 100
   AND year = 2010;
   
- SELECT COUNT(country)
- FROM population_years
- WHERE country LIKE '%Islands%';
+SELECT COUNT(country)
+FROM population_years
+WHERE country LIKE '%Islands%';
  
- SELECT population
- FROM population_years
- WHERE 
-    (country = 'Indonesia' AND year = 2000)
-    OR
-    (country = 'Indonesia' AND year = 2010);
+SELECT population
+FROM population_years
+WHERE 
+   (country = 'Indonesia' AND year = 2000)
+   OR
+   (country = 'Indonesia' AND year = 2010);
